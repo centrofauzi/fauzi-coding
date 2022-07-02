@@ -52,6 +52,7 @@ CARA BIKIN BRANCH BARU DI VCS (1)
 CARA BIKIN BRANCH BARU DI VCS (2)
 1. git checkout -b (nama branch baru yang mau dimasukin)
 2. git status (liat posisi kita ada di branch yang mana)
+3. git branch (liat ada branch apa aja & posisi kita dimana)
 
 CARA PUSH (UPDATE BRANCH) DARI VCS KE github, masukin sintaks ini di terminal
 1. git diff -> untuk liat perubahan yang terjadi

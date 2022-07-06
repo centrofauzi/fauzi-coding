@@ -3,3 +3,7 @@ Hello! My name is Fauzi Amallul (Oji).
 Welcome to my 1st repository project, in this file I will explore about my learning journey especially on FSW dev!
 
 Enjoy.
+
+--
+
+Update test - link to new device.

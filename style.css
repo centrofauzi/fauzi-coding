@@ -3,7 +3,7 @@
 /* START JUMBOTRON */
 .jumbotron1{
   background-image: url('./assets/main-bg.jpg');
-  height: 650px;
+  height: 960px;
   background-size: cover;
   border-radius: 0px;
   text-align: center;
@@ -33,7 +33,7 @@
 /* START SECTION 1 */
 .section1 {
     background-image: url('./assets/the-games-bg.jpg');
-    height: 650px;
+    height: 982px;
     background-size: cover;
     border-radius: 0px;
     text-align: center;
@@ -45,7 +45,36 @@
 
 /* START SECTION 1 */
 .section1{
-    margin-top: 30px;
+  background-image: url('./assets/the-games-bg.jpg');
+  height: 982px;
+  background-size: cover;
+  border-radius: 0px;
+
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.section1 p{
+  width: 411.5px;
+  height: 28.42px;
+  left: 78px;
+  top: 281.11px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.section1 h1 {
+  width: 411.5px;
+  height: 73.64px;
+  left: 78x;
+  top: 323.09px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.col-lg-7{
+  width: 868x;
+  height: 477px;
+  left: 453px;
+  top: 318.7px;
 }
 /* END SECTION 1 */
 

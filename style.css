@@ -13,7 +13,7 @@
 }
 
 .jumbotron1 h1 {
-  margin-top: 120px;
+  margin-top: 230px;
   text-shadow: 1px 1px 2px black;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .jumbotron1 .btn{
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .btn{
@@ -30,18 +30,6 @@
 }
 /* END JUMBOTRON */
 
-/* START SECTION 1 */
-.section1 {
-    background-image: url('./assets/the-games-bg.jpg');
-    height: 982px;
-    background-size: cover;
-    border-radius: 0px;
-    text-align: center;
-  
-    background-attachment: fixed;
-    background-position: center;
-}
-/* END SECTION 1 */
 
 /* START SECTION 1 */
 .section1{

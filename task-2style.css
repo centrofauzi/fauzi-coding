@@ -109,3 +109,63 @@ button {
 
 
 /* BOT */
+
+.chosen {
+    background-color: #C4C4C4;
+    border-radius: 32px;
+}
+
+.boxR {
+}
+
+.winBox {
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background: #4C9654;
+    border-radius: 10px;
+    margin:  16px auto;
+    padding: 16px;
+}
+
+.drawBox {
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background: #035B0C;
+    border-radius: 10px;
+    margin:  16px auto;
+    padding: 16px;
+}
+
+@media(min-width:760px){
+    .game-playground{
+        flex-direction: row;
+        transform: translateX(16%);
+    }
+    .used{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-tools{
+        align-self: center;
+        width: 224px;
+        height: 206px;
+    }
+    .user-tools img {
+        width: 50%;
+    }
+    .versus-reset {
+        margin: auto 52px;
+        width: 300px;
+    }
+    .versus-reset h1 {
+        font-size: 144px;
+    }
+    .player-choice{
+        margin: auto 5% 0 0
+    }
+    .bot-choice{
+        margin: auto 0 0 5%
+    }
+}

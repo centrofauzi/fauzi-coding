@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:400,500,700,800");
+
+:root {
+    /* PRIMARY */
+    --background-color: #9C835F;
+    --back-button: #9C835F;
+    --game-title: #F9B23D;
+    --name-player: #000;
+
+    /* NEUTRAL */
+    --playing: #C4C4C4;
+    --bg-result: #4C9654;
+    --versus: #BD0000;
+
+    /* FONT WEIGHT */
+    --font-bold: 710;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width:100%;
+    font-weight: var(--font-bold);
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    margin: 35px 0 0 35px;
+}
+
+a {
+    color: #724C21;
+    text-deciration: none;
+} a:hover {background-color: gold;border-radius: 150px;}
+
+.back {
+    display: grid;
+    place-items: center;
+}
+.back:hover {
+    transform: scale(1.5);
+}
+
+.gamename {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.gamename h1 {
+    margin-left: 15px;
+    font-size: 1.5em;
+    width: 100%;
+}
+

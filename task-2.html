@@ -26,13 +26,71 @@
       </h1>
     </div>
     <!-- Header Logo & Game Description-->
-    <div class="gamename">
+    <div class="game-name">
       <img src="./assets/logo.png" alt="logo" class="logo">
       <h1>ROCK PAPER SCISSORS</h1>
     </div>
   </header>
 
-<!-- Game Section -->
-  <h1> Hello World! </h1>
+  <!-- Game Section -->
+  <section>
+    <!-- Game Playground -->
+    <div class="game-playground">
+      <!-- Player -->
+      <div class="player-coice">
+        <h1 class="player-name">YOU</h1>
+        <div class="used">
+         <!-- Player : Batu -->
+          <button class="player-tools" id="batu-player">
+            <img class="tools" src="./assets/batu.png" alt="batu">
+          </button>
+          <!-- Player : Kertas -->
+          <button class="player-tools" id="kertas-player">
+            <img class="tools" src="./assets/kertas.png" alt="kertas">
+          </button>
+          <!-- Player : Gunting -->
+          <button class="player-tools" id="gunting-player">
+            <img class="tools" src="./assets/gunting.png" alt="gunting">
+          </button>
+        </div>
+      </div>
+
+      <!-- Center Navigation -->
+      <div class="versus-reset">
+        <!-- VS -->
+        <div class="boxReset" id="box">
+          <h1 id="h1">VS</h1>
+        </div>
+        <!-- Refresh-->
+        <div class="refresh">
+          <img id="refresh" src="./assets/refresh.png">
+        </div>
+      </div>
+
+      <!-- Bot -->
+      <div class="bot-coice">
+        <h1 class="player-name">BOT</h1>
+        <div class="used">
+          <!-- Bot : Batu -->
+          <button class="bot-tools" id="batu-bot">
+            <img src="./assets/batu.png" alt="batu">
+          </button>
+          <!-- Bot : Kertas -->
+          <button class="bot-tools" id="kertas-bot">
+            <img src="./assets/kertas.png" alt="kertas">
+          </button>
+          <!-- Bot : Gunting -->
+          <button class="bot-tools" id="gunting-bot">
+            <img src="./assets/gunting.png" alt="gunting">
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Java Script -->
+  <script src="./task-2JS.js"></script>
+
 </body>
 </html>

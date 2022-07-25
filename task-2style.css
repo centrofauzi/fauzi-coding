@@ -13,7 +13,7 @@
     --versus: #BD0000;
 
     /* FONT WEIGHT */
-    --font-bold: 710;
+    --font-bold: 680;
 }
 
 html,
@@ -31,14 +31,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* HEADER */
 header {
     display: flex;
-    margin: 35px 0 0 35px;
+    margin: 36px 0 0 36px;
 }
 
 a {
     color: #724C21;
-    text-deciration: none;
+    text-decoration: none;
 } a:hover {background-color: gold;border-radius: 150px;}
 
 .back {
@@ -49,15 +50,59 @@ a {
     transform: scale(1.5);
 }
 
-.gamename {
+.game-name {
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 26px;
 }
 
-.gamename h1 {
-    margin-left: 15px;
+.game-name h1 {
+    margin-left: 16px;
     font-size: 1.5em;
     width: 100%;
 }
 
+/* GAME SECTION */
+section {
+    margin: 6px auto;
+}
+
+.game-playground {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.player-name {
+    font-size: 36px;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    width: 20%;
+    height: 120px;
+}
+
+/* PLAYER */
+.player-tools {
+    cursor: pointer;
+}
+
+.player-tools:hover {
+    transform: rotate(16deg);
+}
+
+/* CENTER NAVIGATION */
+.boxReset {
+    margin: 20px 10px;
+}
+
+.boxReset h1 {
+    font-size: 46px;
+    color: var(--versus);
+    font-weight: var(--font-bold);
+}
+
+/* BOT */

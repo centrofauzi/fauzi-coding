@@ -1,0 +1,46 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    return res.send('Welcome to my server')
+});
+
+app.get('/info', (req, res) => {
+    return res.send('this is info page')
+});
+
+app.get('/bio', (req, res) => {
+    return res.send('Fauzi Amallul')
+});
+
+app.listen(8000, () => {
+    console.log(`server is running at ${8000}`)
+})
+
+
+Note: Kalau standar industri dia buat file router
+fungsinya buat manggil page.
+
+
+----
+CODE TANPA CONTROLLERS
+// router.get('/', (req, res) => {
+//     return res.send('Welcome to my server')
+// });
+
+// router.get('/info', (req, res) => {
+//     return res.send('this is info page')
+// });
+
+// router.get('/bio', (req, res) => {
+//     return res.send('Fauzi Amallul')
+// });
+
+// getProductById: (req, res) => {
+//     const id = req.params.id
+//     return res.send(`id is: ${id}`)
+// }
+
+----
+NOTES
+// controllers: menerima request & mengembalikan respon (seperti tukang parkir)

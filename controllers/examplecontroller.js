@@ -2,13 +2,15 @@ const { link } = require("fs")
 const path = require("path")
 
 module.exports = {
-    home: (req, res) => {
-        return res.sendFile('index.html', { root: path.join(__dirname, '../game') });
+    home:  (req, res) => {
+        return res.send('Welcome to my Website, open router.js for menu');
     },
-
-
-
-
+    playGame: (req, res) => {
+        return res.sendFile('index.html', { root: path.join(__dirname, '../game')});
+    },
+    mainPage: (req, res) => {
+        return res.sendFile('mainpage.html', { root: path.join(__dirname, '../fauzi-coding')});
+    },
     info: (req, res) => {
         return res.send('this is info page')
     },

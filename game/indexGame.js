@@ -127,4 +127,6 @@ function refreshGame() {
     startGame();
 }
 
+
 startGame();
+

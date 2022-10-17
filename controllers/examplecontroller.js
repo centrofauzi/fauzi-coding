@@ -1,7 +1,14 @@
+const { link } = require("fs")
+const path = require("path")
+
 module.exports = {
     home: (req, res) => {
-        return res.send('Welcome to my server')
+        return res.sendFile('index.html', { root: path.join(__dirname, '../game') });
     },
+
+
+
+
     info: (req, res) => {
         return res.send('this is info page')
     },

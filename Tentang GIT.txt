@@ -1,0 +1,70 @@
+Hallo! ini adalah catatan tentang GIT. Semoga bermanfaat ^^
+
+Git: version control/aplikasi yang berfungsi untuk mengatur versi dari kode/aplikasi kita
+
+Fungsi Git
+- backup file project
+- duplicate file project
+- tambah/kurangi file project
+- kolaborasi
+
+Ketika kita bekerja dengan Git, maka ada 4 tahapan
+- Working directory : tahap pengerjaan kode (ex: kita bikin tulisan di .txt ini)
+- Staging area : tahap dimana perubahan yang kita buat siap di-commit/dibuatkan berita acara (setelah ubah tulisan di .txt kita informasikan perubahan dari working directory ke staging area, ex: git add .)
+- Local repository : tahap perubahan sudah fix terjadi tapi hanya di local repository (kita bisa kasih commit message ex: git commit - "judul perubahan")
+- Remote repository : tahap dimana perubahan sudah ada di cloud & dapat diakses oleh dev lain (kita bisa push git dengan ex: git push)
+
+-----------------------------------------------------------------------------------------------------
+
+Lalu apa saja tahap biar kita bisa pakai Git?
+
+1. Install Git di terminal (linux)
+- $ sudo apt update
+- $ sudo apt install git -y
+   Install Git di terminal (MacOS)
+- install brew (cari cara di google yah)
+- install Gitnya dengan: brew install git
+
+2. Cek git version
+- git --version
+
+3. Install Git di folder project kita
+- balik ke project yang kita mau dengan "cd"
+- install git disana dengan "git init"
+
+Maka kalau udah berhasil kita bisa jalanin perintah-perintah seperti git status, git push, git pull, git commit, dll.
+----------------------------------------------------------------------------
+Pertanyaannya, kalau kita mau connect git dengan github gimana?
+
+CARA REGIST GIT LINK (SSH)
+1. Buka terminal masukin perintah di terminal home/kamu$ ssh-keygen
+2. Copy user ssh kita yang muncul (dia punya format .pub)
+3. Masuk ke settings github kita, lalu pilih SSH -> GPG Keys
+4. Daftar dengan paste key unik yang muncul tadi (title bebas, biasanya nama device) -> tujuannya link github dengan perangkat kita
+5. Balik lagi ke terminal dan clone ulang def dengan home/kamu$ git clone (url ssh yang ada di repository github kamu/ orang yang mau diclone reponya)
+
+Note: kalau kita udah regist SSH device kita, nextnya kita tinggal : git clone (url ssh repository)
+
+CARA BIKIN BRANCH BARU DI VCS (1)
+1. Buka Visual Code Studio -> New Window -> Open folder
+2. Pilih folder yang udah dilink tadi di terminal (kalau windows pake wsl cari pake kata kuncu \\wsl$ -> masuk ke folder bersangkutan)
+
+CARA BIKIN BRANCH BARU DI VCS (2)
+1. git checkout -b (nama branch baru yang mau dimasukin)
+2. git status (liat posisi kita ada di branch yang mana)
+3. git branch (liat ada branch apa aja & posisi kita dimana)
+
+CARA PUSH (UPDATE BRANCH) DARI VCS KE github, masukin sintaks ini di terminal
+1. git diff -> untuk liat perubahan yang terjadi
+2. git add . 
+3. git commit -m "komentar"
+4. git push
+5. branch kamu akan terupdate ke versi terbaru
+
+CARA PINDAH PROJECT KE BRANCH lain
+1. git checkout (ketik nama branch tujuan gausah pake kurung)
+
+KALAU KITA BIKIN BRANCH DI WEB, TERUS GIMANA CARA UPDATE DI DEVICE?
+1. git fetch (manggil dari github ada gak nih branch baru disana ke device kita)
+2. git checkout (branch tujuan kita, yang baru jg otomatis udah muncul)
+3. kalau kita update & push lagi, caranya sama aja kaya yang di atas

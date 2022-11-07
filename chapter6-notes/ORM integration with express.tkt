@@ -52,3 +52,11 @@ Langkah ---
 
 10. Masuk ke database.js lalu sesuaikan file sesuai yang tertera
 
+11. Buka postgres lalu buat DB baru sesuai dengan nama project 
+    case ini "akademi", bisa disesuaikan sesuai project
+
+12. Masukan ini di terminal
+    npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+    ubah jadi :
+    npx sequelize-cli model:generate --name roles --attributes name:string
+

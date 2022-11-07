@@ -1,0 +1,54 @@
+ORM Integration with express
+    1. Init project baru
+    2. Install express, sequalize, dotenv, cors, sequelize-cli
+    3. Config sequelize
+    4. Init sequelize
+    5. Migration dan model
+    6. Controller dan router
+
+Langkah ---
+
+1. Buka terminal lalu buat folder baru dan istal yarn dengan:
+    -> yarn init
+
+2. Install sekaligus hal-hal yang dibutuhkan dengan:
+    -> yarn add express cors dotenv sequalize sequalize-clie
+    express : framework backend
+    cors : sisi security front-end (kayak firewall biar FE bisa connect)
+    dotenv : konfigurasi supaya gak semua file data kita gak ikut kepush ke git (dari sisi file .inv)
+    sequelize : library ORM 
+    cli : jalankan cmd di terminal
+
+3. Masuk VCS dan buka folder yang dibuat tadi, buat index.json
+
+4. Install library
+    -> yarn add pg pg-hstore
+    biar bisa connect
+
+5. Buat file .env, lalu input
+    PORT=3000
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_NAME=pake db name kamu
+    DB_USERNAME=pake username postgres kamu
+    DB_PASSWORD=pake password kamu
+
+6. Masuk ke package.json 
+    install nodemon dulu dengan -> yarn add nodemon
+    tambahkan : 
+
+    "scripts": {
+    "dev": "nodemon index.js"
+
+7. Uji dengan yarn dev
+    Jika berhasil example app listening on port 3000
+
+8. Buat konfigurasi biar .sequalize bisa nyambung ke .env kita
+    buat file dengan nama .sequelizerc lalu masukan command yg tertera pada file
+
+9. Init sequalizenya dengan cara masukan ini di terminal
+    -> npx sequelize-cli init
+    dia akan bikin folder sendiri
+
+10. Masuk ke database.js lalu sesuaikan file sesuai yang tertera
+
